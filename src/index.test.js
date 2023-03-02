@@ -52,4 +52,5 @@ test("protected", async function () {
   });
 
   expect(response.status).toBe(200);
+  expect((await response.json()).username).toBe("foo");
 });
